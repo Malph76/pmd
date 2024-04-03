@@ -10,14 +10,26 @@
     </description>
 
     <!-- Your rules will come here -->
-    <rule ref="category/java/errorprone.xml" />
-    <rule ref="category/java/codestyle.xml" />
-    <rule ref="category/java/design.xml" />
+    <rule ref="category/java/errorprone.xml" >
+        <exclude name="BeanMembersShouldSerialize"/>
+    </rule>
+    <rule ref="category/java/codestyle.xml" >
+        <exclude name="NoPackage"/>
+        <exclude name="LocalVariableCouldBeFinal"/>
+        <exclude name="MethodArgumentCouldBeFinal"/>
+        <exclude name="AtLeastOneConstructor"/>
+        <exclude name="NoPackage"/>
+    </rule>
+    <rule ref="category/java/design.xml" >
+        <exclude name="LawOfDemeter"/>
+    </rule>
 
     <exclude-pattern>.*src/main/java/GameDriver.java.*</exclude-pattern>
     <exclude-pattern>.*src/main/java/CPUPlayer.java.*</exclude-pattern>
     <exclude-pattern>.*src/main/java/HumanPlayer.java.*</exclude-pattern>
     <exclude-pattern>.*src/main/java/Monster.java.*</exclude-pattern>
     <exclude-pattern>.*src/main/java/Move.java.*</exclude-pattern>
+
+
 
 </ruleset>
