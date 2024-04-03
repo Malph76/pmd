@@ -22,6 +22,7 @@
     </rule>
     <rule ref="category/java/design.xml" >
         <exclude name="LawOfDemeter"/>
+        <exclude name="LoosePackageCoupling"/>
     </rule>
 
     <exclude-pattern>.*src/main/java/GameDriver.java.*</exclude-pattern>
@@ -30,6 +31,6 @@
     <exclude-pattern>.*src/main/java/Monster.java.*</exclude-pattern>
     <exclude-pattern>.*src/main/java/Move.java.*</exclude-pattern>
 
-    <exclude-pattern>.category/java/design.xml/LoosePackageCoupling*</exclude-pattern>
+
 
 </ruleset>
